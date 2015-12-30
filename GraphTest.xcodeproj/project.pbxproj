@@ -18,6 +18,7 @@
 		87148CEA1C343C75007BED89 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CE91C343C75007BED89 /* Graph.m */; settings = {ASSET_TAGS = (); }; };
 		87148CF21C34528D007BED89 /* DepthFirstPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CF11C34528D007BED89 /* DepthFirstPaths.m */; settings = {ASSET_TAGS = (); }; };
 		87148CF61C346182007BED89 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CF51C346182007BED89 /* Queue.m */; settings = {ASSET_TAGS = (); }; };
+		87148CF91C3464FD007BED89 /* BreadthFirstPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CF81C3464FD007BED89 /* BreadthFirstPaths.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		87148CF11C34528D007BED89 /* DepthFirstPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepthFirstPaths.m; sourceTree = "<group>"; };
 		87148CF41C346182007BED89 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		87148CF51C346182007BED89 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		87148CF71C3464FD007BED89 /* BreadthFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BreadthFirstPaths.h; sourceTree = "<group>"; };
+		87148CF81C3464FD007BED89 /* BreadthFirstPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BreadthFirstPaths.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				87148CE91C343C75007BED89 /* Graph.m */,
 				87148CF01C34528D007BED89 /* DepthFirstPaths.h */,
 				87148CF11C34528D007BED89 /* DepthFirstPaths.m */,
+				87148CF71C3464FD007BED89 /* BreadthFirstPaths.h */,
+				87148CF81C3464FD007BED89 /* BreadthFirstPaths.m */,
 			);
 			name = APIs;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				87148CBC1C3438A5007BED89 /* ViewController.m in Sources */,
 				87148CB91C3438A5007BED89 /* AppDelegate.m in Sources */,
 				87148CF61C346182007BED89 /* Queue.m in Sources */,
+				87148CF91C3464FD007BED89 /* BreadthFirstPaths.m in Sources */,
 				87148CB61C3438A5007BED89 /* main.m in Sources */,
 				87148CF21C34528D007BED89 /* DepthFirstPaths.m in Sources */,
 			);

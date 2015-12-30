@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Graph.h"
 #import "DepthFirstPaths.h"
+#import "BreadthFirstPaths.h"
 #import "Queue.h"
 
 @interface ViewController ()
@@ -38,8 +39,10 @@
     [graph addEdge:9 w:12];
     
     DepthFirstPaths *dfp = [[DepthFirstPaths alloc] initWithGraph:graph s:10];
-    
     NSLog(@"path: %@", [dfp pathTo:12]);
+    
+    BreadthFirstPaths *bfp = [[BreadthFirstPaths alloc] initWithGraph:graph s:10];
+    NSLog(@"path: %@", [bfp pathTo:12]);
 }
 
 - (void)didReceiveMemoryWarning {

@@ -19,8 +19,16 @@
     self = [super init];
     
     if (self) {
-        _marked = [NSMutableArray new];
-        _edgeTo = [NSMutableArray new];
+        _s = s;
+        _marked = [[NSMutableArray alloc] initWithCapacity:graph.vertices];
+        _edgeTo = [[NSMutableArray alloc] initWithCapacity:graph.vertices];
+        
+        for (NSInteger i = 0; i < graph.vertices; i++) {
+            _marked[i] = @(0);
+            _edgeTo[i] = @(0);
+        }
+        
+        [self dfs:graph v:s];
     }
     
     return self;

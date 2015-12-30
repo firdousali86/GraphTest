@@ -17,6 +17,7 @@
 		87148CDA1C3438A5007BED89 /* GraphTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CD91C3438A5007BED89 /* GraphTestUITests.m */; };
 		87148CEA1C343C75007BED89 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CE91C343C75007BED89 /* Graph.m */; settings = {ASSET_TAGS = (); }; };
 		87148CF21C34528D007BED89 /* DepthFirstPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CF11C34528D007BED89 /* DepthFirstPaths.m */; settings = {ASSET_TAGS = (); }; };
+		87148CF61C346182007BED89 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CF51C346182007BED89 /* Queue.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		87148CE91C343C75007BED89 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
 		87148CF01C34528D007BED89 /* DepthFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthFirstPaths.h; sourceTree = "<group>"; };
 		87148CF11C34528D007BED89 /* DepthFirstPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepthFirstPaths.m; sourceTree = "<group>"; };
+		87148CF41C346182007BED89 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		87148CF51C346182007BED89 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +110,8 @@
 		87148CB31C3438A5007BED89 /* GraphTest */ = {
 			isa = PBXGroup;
 			children = (
-				87148CE71C343C5B007BED89 /* Objects */,
+				87148CF31C346172007BED89 /* Structures */,
+				87148CE71C343C5B007BED89 /* APIs */,
 				87148CB71C3438A5007BED89 /* AppDelegate.h */,
 				87148CB81C3438A5007BED89 /* AppDelegate.m */,
 				87148CBA1C3438A5007BED89 /* ViewController.h */,
@@ -147,7 +151,7 @@
 			path = GraphTestUITests;
 			sourceTree = "<group>";
 		};
-		87148CE71C343C5B007BED89 /* Objects */ = {
+		87148CE71C343C5B007BED89 /* APIs */ = {
 			isa = PBXGroup;
 			children = (
 				87148CE81C343C75007BED89 /* Graph.h */,
@@ -155,7 +159,16 @@
 				87148CF01C34528D007BED89 /* DepthFirstPaths.h */,
 				87148CF11C34528D007BED89 /* DepthFirstPaths.m */,
 			);
-			name = Objects;
+			name = APIs;
+			sourceTree = "<group>";
+		};
+		87148CF31C346172007BED89 /* Structures */ = {
+			isa = PBXGroup;
+			children = (
+				87148CF41C346182007BED89 /* Queue.h */,
+				87148CF51C346182007BED89 /* Queue.m */,
+			);
+			name = Structures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +305,7 @@
 				87148CEA1C343C75007BED89 /* Graph.m in Sources */,
 				87148CBC1C3438A5007BED89 /* ViewController.m in Sources */,
 				87148CB91C3438A5007BED89 /* AppDelegate.m in Sources */,
+				87148CF61C346182007BED89 /* Queue.m in Sources */,
 				87148CB61C3438A5007BED89 /* main.m in Sources */,
 				87148CF21C34528D007BED89 /* DepthFirstPaths.m in Sources */,
 			);

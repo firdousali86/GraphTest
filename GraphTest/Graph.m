@@ -41,10 +41,6 @@
 +(NSInteger)getDegree:(Graph*)graph v:(NSInteger)v{
     NSInteger adjNodes = [[graph getAdj:v] count];
     
-//    for (NSInteger i = 0; i < adjNodes; i++) {
-//        degree++;
-//    }
-    
     return adjNodes;
 }
 

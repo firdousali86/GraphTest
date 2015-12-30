@@ -37,12 +37,15 @@
     [graph addEdge:9 w:11];
     [graph addEdge:11 w:12];
     [graph addEdge:9 w:12];
+    [graph addEdge:11 w:11];
     
     DepthFirstPaths *dfp = [[DepthFirstPaths alloc] initWithGraph:graph s:10];
     NSLog(@"path: %@", [dfp pathTo:12]);
     
     BreadthFirstPaths *bfp = [[BreadthFirstPaths alloc] initWithGraph:graph s:10];
     NSLog(@"path: %@", [bfp pathTo:12]);
+    
+    NSLog(@"self loops: %ld", (long)[Graph getNumberOfSelfLoops:graph]);
 }
 
 - (void)didReceiveMemoryWarning {

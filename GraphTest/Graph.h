@@ -16,4 +16,8 @@
 -(void)addEdge:(NSInteger)v w:(NSInteger)w;
 -(NSArray*)getAdj:(NSInteger)v;
 
++(NSInteger)getDegree:(Graph*)graph v:(NSInteger)v;
++(NSInteger)maxDegree:(Graph*)graph;
++(NSInteger)getNumberOfSelfLoops:(Graph *)graph;
+
 @end

@@ -15,6 +15,8 @@
 		87148CC41C3438A5007BED89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87148CC21C3438A5007BED89 /* LaunchScreen.storyboard */; };
 		87148CCF1C3438A5007BED89 /* GraphTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CCE1C3438A5007BED89 /* GraphTestTests.m */; };
 		87148CDA1C3438A5007BED89 /* GraphTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CD91C3438A5007BED89 /* GraphTestUITests.m */; };
+		87148CEA1C343C75007BED89 /* Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CE91C343C75007BED89 /* Graph.m */; settings = {ASSET_TAGS = (); }; };
+		87148CF21C34528D007BED89 /* DepthFirstPaths.m in Sources */ = {isa = PBXBuildFile; fileRef = 87148CF11C34528D007BED89 /* DepthFirstPaths.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		87148CD51C3438A5007BED89 /* GraphTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GraphTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87148CD91C3438A5007BED89 /* GraphTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GraphTestUITests.m; sourceTree = "<group>"; };
 		87148CDB1C3438A5007BED89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87148CE81C343C75007BED89 /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
+		87148CE91C343C75007BED89 /* Graph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Graph.m; sourceTree = "<group>"; };
+		87148CF01C34528D007BED89 /* DepthFirstPaths.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepthFirstPaths.h; sourceTree = "<group>"; };
+		87148CF11C34528D007BED89 /* DepthFirstPaths.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DepthFirstPaths.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		87148CB31C3438A5007BED89 /* GraphTest */ = {
 			isa = PBXGroup;
 			children = (
+				87148CE71C343C5B007BED89 /* Objects */,
 				87148CB71C3438A5007BED89 /* AppDelegate.h */,
 				87148CB81C3438A5007BED89 /* AppDelegate.m */,
 				87148CBA1C3438A5007BED89 /* ViewController.h */,
@@ -138,6 +145,17 @@
 				87148CDB1C3438A5007BED89 /* Info.plist */,
 			);
 			path = GraphTestUITests;
+			sourceTree = "<group>";
+		};
+		87148CE71C343C5B007BED89 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				87148CE81C343C75007BED89 /* Graph.h */,
+				87148CE91C343C75007BED89 /* Graph.m */,
+				87148CF01C34528D007BED89 /* DepthFirstPaths.h */,
+				87148CF11C34528D007BED89 /* DepthFirstPaths.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +220,7 @@
 		87148CA91C3438A5007BED89 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Firdous Ali";
 				TargetAttributes = {
@@ -270,9 +289,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87148CEA1C343C75007BED89 /* Graph.m in Sources */,
 				87148CBC1C3438A5007BED89 /* ViewController.m in Sources */,
 				87148CB91C3438A5007BED89 /* AppDelegate.m in Sources */,
 				87148CB61C3438A5007BED89 /* main.m in Sources */,
+				87148CF21C34528D007BED89 /* DepthFirstPaths.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,10 +434,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GraphTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atech.salesclient.GraphTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GraphTest/GraphTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -424,10 +448,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GraphTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.atech.salesclient.GraphTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GraphTest/GraphTest-Bridging-Header.h";
 			};
 			name = Release;
 		};
